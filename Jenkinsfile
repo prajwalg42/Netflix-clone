@@ -30,6 +30,7 @@ pipeline{
            steps {
                 script {
                     //waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token'
+                    echo "Skipping Quality Gate for this run"
                 }
             }
         }
