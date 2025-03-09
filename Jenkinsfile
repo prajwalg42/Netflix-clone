@@ -70,8 +70,8 @@ pipeline{
             steps{
                 script{
                     dir('Kubernetes') {
-                                sh 'kubectl apply -f deployment.yml'
-                                sh 'kubectl apply -f service.yml'
+                                sh 'kubectl apply -f deployment.yml --validate=false'
+                                sh 'kubectl apply -f service.yml --validate=false'
                     }
                 }
             }
