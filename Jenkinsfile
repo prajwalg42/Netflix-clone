@@ -6,6 +6,7 @@ pipeline{
     }
     environment {
         SCANNER_HOME=tool 'sonar-scanner'
+        KUBECONFIG = '/home/ubuntu/.kube/config'
     }
     stages {
         stage('clean workspace'){
